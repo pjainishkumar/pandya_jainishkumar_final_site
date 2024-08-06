@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pandya_jainishkumar_coding_assignment14
+    ports:
+      - "5575:80"
+    volumes:
+      - ./pandya_jainishkumar_final_site:/usr/share/nginx/html
